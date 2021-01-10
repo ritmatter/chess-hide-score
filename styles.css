@@ -1,3 +1,21 @@
+/* A bug exists where sidebar ratings are not hidden after switching between
+ * tabs in the sidebar. This CSS simply hides the scores altogether, which
+ * forgos the censor box but successfully hides the scores. */
 .sidebar-component .user-tagline-rating {
   visibility: hidden;
+}
+
+/* The chart needs special styling to hide while page is loading. */
+.stats-container-component .chart-component {
+ mix-blend-mode: black;
+}
+
+/* Even though elements with these classes will be hidden with an overlay div, the div
+ * rendering happens after the page has loaded. This styling temporarily hides the
+ * divs before they can be overlayed. */
+.post-view-meta-rating, .user-tagline-rating, .game-over-rating-rating, .user-rating,
+.section-clickable .clickable-rating, .main-chart-stats-current,
+.sidebar-nav-full, .rating-block-container, .user-tagline-popover-rating {
+ background-color:black;
+ color:black;
 }

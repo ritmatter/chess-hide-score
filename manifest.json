@@ -1,8 +1,12 @@
 {
   "name": "Hide Chess Score",
-  "permissions": ["activeTab"],
+  "permissions": ["declarativeContent"],
   "version": "1.0",
   "description": "Hide chess scores for improved performance!",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
   "content_scripts": [
     {
       "matches": ["http://*.chess.com/*", "https://*.chess.com/*"],
@@ -16,7 +20,8 @@
       "32": "images/pawn_32.png",
       "48": "images/pawn_48.png",
       "128": "images/pawn_128.png"
-    }
+    },
+    "default_title": "Hide Chess Score"
   },
   "icons": {
     "16": "images/pawn_16.png",

@@ -1,7 +1,7 @@
 MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
 
 function hideScore() {
-  var els = document.querySelectorAll(".post-view-meta-rating,.user-tagline-rating,.game-over-rating-rating,.chart-holder,.user-rating,.section-clickable .clickable-rating,.main-chart-stats-current");
+  var els = document.querySelectorAll(".post-view-meta-rating,.user-tagline-rating,.game-over-rating-rating,.chart-holder,.user-rating,.section-clickable .clickable-rating,.main-chart-stats-current,.sidebar-nav-full,.rating-block-container,.user-tagline-popover-rating,.stats-container-component .chart-component");
   for (var i = 0; i < els.length; i++) {
     var el = els[i];
 
