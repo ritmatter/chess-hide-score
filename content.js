@@ -17,7 +17,7 @@ function hideScore() {
     el.style.position = "relative";
     var censor = document.createElement("div");
     censor.classList.add("score-censor");
-    censor.style.cssText ="position:absolute; top:0; left:0; width:100%; height:100%; background-color:black";
+    censor.style.cssText = "position:absolute; top:0; left:0; width:100%; height:100%; background-color:black";
     el.appendChild(censor);
   }
 };
